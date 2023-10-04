@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<title>Frontpage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div id = "container">
+    <div id="contain">
+
+        <header>
+            <img src="/images/fourthingsplus.png"  width="100%"/>
+        </header>
+        <h1>To-Do List</h1>
+        <div id="p">
+        <p>Welcome to the app that will remind you what to do and buy, as long as you remember to add it to the list</p>
+    </div>
+        <form method="post">
+
+            <div id ="box">
+        <input type="text" name="username" placeholder="username"><br><br>
+            <input type="password" name="password" placeholder="password"><br><br>
+        <button type="submit" formaction="login">Log In</button><br><br>
+
+
+        <a href="/createuser" class="button"><button>Create User</button></a>
+    </div>
+        </form>
+
+        <p class="message" th:text="${#ctx.message}"></p>
+
+    </div>
+</div>
+
+</body>
+</html>
+

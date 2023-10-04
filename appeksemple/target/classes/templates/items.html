@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<title>Items page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+</head>
+
+<body>
+<div id = "container">
+    <div id="contain">
+        <header>
+
+            <img src="/images/fourthingsplus.png" width="100%"/></header>
+
+<h1>Items and Tasks</h1>
+
+
+        <div id="box2">
+
+            <p>Add items</p>
+        <input type="text" id="item"  placeholder="Enter item"><br><br>
+        <button onsubmit="AddItem()">Add Item</button>
+            <ul id="itemList">
+
+            </ul><br>
+
+            <p>Add Tasks</p>
+        <input type="text" id="task" placeholder="Enter task"><br><br>
+        <button onsubmit="AddTask()">Add Task</button>
+        <ul id="taskList">
+
+        </ul><br><br>
+
+                <a href="/remove"><button>Remove from list</button></a><br>
+                <a href="/"><button>Log out</button></a>
+
+
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+
